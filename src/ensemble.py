@@ -23,7 +23,7 @@ class Ensemble():
         self.models= [Baysian() for _ in range(self.machine_num)]
         
         for i in range(self.machine_num):
-            self.models[i].fit(self.sub_datas[i])
+            self.models[i].fit(self.data, self.sub_datas[i])
     
     def test(self, data_num):
         rand_for_test= [np.random.randint(0,5172) for _ in range(data_num)]
