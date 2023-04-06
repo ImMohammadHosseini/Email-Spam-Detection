@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 from .baysian import Baysian
 
-class ensemble():
+class Ensemble():
     def __init__(self, machine_num, tdata_num):
         self.machine_num= machine_num
         self.tdata_num = tdata_num

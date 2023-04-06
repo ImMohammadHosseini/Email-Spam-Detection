@@ -13,7 +13,7 @@ class Baysian():
         self.p_ham_vocab={}
         
         
-    def fit(self, train_data):
+    def fit(self, data, train_data):
         
         counts=data['Prediction'].value_counts()
         self.vocab= train_data.columns[1:-1]
